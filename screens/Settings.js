@@ -25,7 +25,7 @@ const Settings = (props) => {
           props.setMapType(itemValue)
         }}>
         <Picker.Item label='Standard' value='standard' />
-        <Picker.Item label='Terrain' value='terrain' />
+        <Picker.Item label='Hybrid' value='hybrid' />
         <Picker.Item label='Satellite' value='satellite' />
       </Picker>
     </View>
