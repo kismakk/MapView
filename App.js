@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, SafeAreaView, Settings, StyleSheet, Text, View } from 'react-native';
+import { Platform, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Map from './screens/Map';
+import Settings from './screens/Settings';
 import Constants from 'expo-constants'
 import { PaperProvider } from 'react-native-paper'
 import MainAppBar from './components/MainAppBar';
@@ -67,7 +68,7 @@ export default function App() {
         >
           <Stack.Screen name='Map'>
             {() =>
-              <Map location={location} />
+              <Map location={location} mapType={mapType} />
             }
           </Stack.Screen>
           <Stack.Screen name='Settings'>
